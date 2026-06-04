@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Will You Be Mine?</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Dynamic gradient background -->
+  <div id="bg"></div>
+
+  <!-- Floating particles canvas -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- ═══════════ PAGE 1 : The Ask ═══════════ -->
+  <div id="page1">
+    <p class="main-text">Will you forever be mine?</p>
+    <p class="name-text">Mishal <span class="heart-emoji">💝</span></p>
+    <p class="from-text">From: <span>Hunzla</span> 🎀</p>
+
+    <div class="btn-group" id="btnGroup">
+      <button class="btn-yes" onclick="showYes()">Yes 💕</button>
+      <button class="btn-no" id="btnNo">No 🌟</button>
+    </div>
+  </div>
+
+  <!-- ═══════════ PAGE 2 : After Yes ═══════════ -->
+  <div id="page2">
+    <p class="yay-text">Yay! I knew you'd say YES! ❤️</p>
+    <p class="love-msg">You're the most amazing person I know. I love you endlessly.</p>
+    <p class="love-from">— From: Hunzla</p>
+
+    <div class="video-wrapper" title="Preloaded video">
+      <!-- Preloaded single video: place a file named "video.mp4" next to index.html -->
+      <video id="videoEl" src="video.mp4" loop autoplay muted playsinline></video>
+    </div>
+
+    <p class="fun-btn">That's so funny babe. Now say yes. →</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
